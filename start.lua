@@ -71,7 +71,7 @@ RunLARViN:write([[
 cd $HOME/LARViN
 token="]]..database:get(Server_LARViN.."Token_LARViN")..[["
 rm -fr LARViN.lua
-wget "https://raw.githubusercontent.com/klanrali/TeamIraqthon/master/IRAQTHON.lua"
+wget "https://raw.githubusercontent.com/klanrali/TeamIraqthon/master/LARViN.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./IRAQTHON.lua -p PROFILE --bot=$token
