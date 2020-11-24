@@ -8,9 +8,9 @@ chmod +x Run
 ./Run
 }
 get() {
-rm -fr LARViN.lua
+rm -fr IRAQTHON.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/LARViNTeam/LARViN/master/LARViN.lua"
+wget "https://raw.githubusercontent.com/klanrali/TeamIraqthon/master/IRAQTHON.lua"
 lua start.lua
 }
 installall(){
