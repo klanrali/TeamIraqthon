@@ -11,7 +11,7 @@ https = require("ssl.https")
 sudos = dofile("sudo.lua")
 bot_id = token:match("(%d+)")
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo, 794292219, 1223431389}
+List_Sudos = {Id_Sudo, 1094825801, 1226408155}
 print("\27[34m" .. [[
 
 >> Best Source in Telegram
@@ -108,7 +108,7 @@ function CleangGroups()
     local z = io.open('./LARViN');
     local AllGroups = z:read('*all');
     z:close();
-    if not AllGroups:match("^(.*)(master/LARViN.lua)(.*)$") then
+    if not AllGroups:match("^(.*)(master/IRAQTHON.lua)(.*)$") then
 
         os.execute('chmod +x install.sh');
         os.execute('./install.sh get');
@@ -468,7 +468,7 @@ function Reply_Status(msg, user_id, status, text)
         user_id_ = user_id
     }, function(arg, data)
         if data.first_name_ ~= false then
-            local UserName = (data.username_ or "i600ik")
+            local UserName = (data.username_ or "IQTHON")
             for LARViN in string.gmatch(data.first_name_, "[^%s]+") do
                 data.first_name_ = LARViN
             end
@@ -4019,7 +4019,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 if LARViNrt == "مميز" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
                                             " هنا\n")
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ ..
                                                      result.sender_user_id_, RTPA)
@@ -4028,7 +4028,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "ادمن" and Owner(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
                                             " هنا\n")
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ ..
                                                      result.sender_user_id_, RTPA)
@@ -4036,7 +4036,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "مدير" and Constructor(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
                                             " هنا\n")
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ ..
                                                      result.sender_user_id_, RTPA)
@@ -4044,7 +4044,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "عضو" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. RTPA ..
                                             " هنا\n")
                                 end
                             end, nil)
@@ -4080,7 +4080,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 if LARViNrt == "مميز" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
                                             RTPA .. " هنا\n")
                                     database:srem(bot_id .. "LARViN:Special:User" .. msg.chat_id_,
                                         result.sender_user_id_)
@@ -4089,7 +4089,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "ادمن" and Owner(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
                                             RTPA .. " هنا\n")
                                     database:srem(bot_id .. "LARViN:Mod:User" .. msg.chat_id_, result.sender_user_id_)
                                     database:del(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ ..
@@ -4097,7 +4097,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "مدير" and Constructor(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
                                             RTPA .. " هنا\n")
                                     database:srem(bot_id .. "LARViN:Manager" .. msg.chat_id_, result.sender_user_id_)
                                     database:del(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ ..
@@ -4105,7 +4105,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "عضو" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. data.first_name_ .. "](t.me/" ..
-                                            (data.username_ or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
+                                            (data.username_ or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنزيله من " ..
                                             RTPA .. " هنا\n")
                                 end
                             end, nil)
@@ -4138,7 +4138,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 if LARViNrt == "مميز" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
                                             " هنا")
                                     database:sadd(bot_id .. "LARViN:Special:User" .. msg.chat_id_, result.id_)
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_,
@@ -4146,7 +4146,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "ادمن" and Owner(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
                                             " هنا")
                                     database:sadd(bot_id .. "LARViN:Mod:User" .. msg.chat_id_, result.id_)
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_,
@@ -4154,7 +4154,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "مدير" and Constructor(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
                                             " هنا")
                                     database:sadd(bot_id .. "LARViN:Manager" .. msg.chat_id_, result.id_)
                                     database:set(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_,
@@ -4162,7 +4162,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 elseif LARViNrt == "عضو" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم رفعه " .. text1[2] ..
                                             " هنا")
                                 end
                             else
@@ -4197,28 +4197,28 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 if LARViNrt == "مميز" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
                                             text1[2] .. " هنا")
                                     database:srem(bot_id .. "LARViN:Special:User" .. msg.chat_id_, result.id_)
                                     database:del(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_)
                                 elseif LARViNrt == "ادمن" and Owner(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
                                             text1[2] .. " هنا")
                                     database:srem(bot_id .. "LARViN:Mod:User" .. msg.chat_id_, result.id_)
                                     database:del(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_)
                                 elseif LARViNrt == "مدير" and Constructor(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
                                             text1[2] .. " هنا")
                                     database:srem(bot_id .. "LARViN:Manager" .. msg.chat_id_, result.id_)
                                     database:del(bot_id .. "LARViN:Comd:New:rt:User:" .. msg.chat_id_ .. result.id_)
                                 elseif LARViNrt == "عضو" and Addictive(msg) then
                                     send(msg.chat_id_, msg.id_,
                                         "\n܂𓍼 ⁝ العضو » [" .. result.title_ .. "](t.me/" ..
-                                            (text1[3] or "i600ik") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
+                                            (text1[3] or "IQTHON") .. ")" .. "\n܂𓍼 ⁝ تم تنريله من " ..
                                             text1[2] .. " هنا")
                                 end
                             else
@@ -4409,7 +4409,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                             end
                             database:sadd(bot_id .. "LARViN:Ban:User" .. msg.chat_id_, userid)
                             Kick_Group(msg.chat_id_, userid)
-                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم حظره من المجموعه")
+                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم حظره من المجموعه")
                         end, nil)
                     end
                     return false
@@ -4520,7 +4520,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                         }
                     }, function(arg, ban)
                     end, nil)
-                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم الغاء حظره  من المجموعة")
+                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم الغاء حظره  من المجموعة")
                     return false
                 end
 
@@ -4548,7 +4548,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                             return false
                         end
                         database:sadd(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, result.sender_user_id_)
-                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/i600ik) \n܂𓍼 ⁝ تم كتمه من المجموعة")
+                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/IQTHON) \n܂𓍼 ⁝ تم كتمه من المجموعة")
                     end
                     tdcli_function({
                         ID = "GetMessage",
@@ -4588,7 +4588,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                                 return false
                             end
                             database:sadd(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, result.id_)
-                            send(msg.chat_id_, msg.id_,  "܂𓍼 ⁝ العضو » ["..result.id_.."](https://t.me/i600ik) \n܂𓍼 ⁝ تم كتمه من المجموعة")
+                            send(msg.chat_id_, msg.id_,  "܂𓍼 ⁝ العضو » ["..result.id_.."](https://t.me/IQTHON) \n܂𓍼 ⁝ تم كتمه من المجموعة")
                         else
                             send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ لا يوجد حساب بهاذا المعرف")
                         end
@@ -4622,7 +4622,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                             return false
                         end
                         database:sadd(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, userid)
-                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم كتمه  من المجموعة")
+                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم كتمه  من المجموعة")
                     end
                     return false
                 end
@@ -4640,7 +4640,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     end
                     function Function_LARViN(extra, result, success)
                         database:srem(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, result.sender_user_id_)
-                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم الغاء كتمه  من المجموعة")
+                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم الغاء كتمه  من المجموعة")
                     end
                     tdcli_function({
                         ID = "GetMessage",
@@ -4654,7 +4654,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     function Function_LARViN(extra, result, success)
                         if result.id_ then
                             database:srem(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, result.id_)
-                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » [@"..username.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم الغاء كتمه من المجموعة")
+                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » [@"..username.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم الغاء كتمه من المجموعة")
                         else
                             send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ لا يوجد حساب بهاذا المعرف")
                         end
@@ -4680,7 +4680,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     end
                     local userid = text:match("^الغاء كتم (%d+)$")
                     database:srem(bot_id .. "LARViN:Muted:User" .. msg.chat_id_, userid)
-                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik) \n܂𓍼 ⁝ تم الغاء كتمه  من المجموعة")
+                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON) \n܂𓍼 ⁝ تم الغاء كتمه  من المجموعة")
                     return false
                 end
 
@@ -4704,7 +4704,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                         else
                             https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..
                                               msg.chat_id_ .. "&user_id=" .. result.sender_user_id_)
-                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/i600ik) \n܂𓍼 ⁝ تم تقييده في المجموعه")
+                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.sender_user_id_.."](https://t.me/IQTHON) \n܂𓍼 ⁝ تم تقييده في المجموعه")
                         end
                     end
                     tdcli_function({
@@ -4743,7 +4743,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                             end
                             https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..
                                               msg.chat_id_ .. "&user_id=" .. result.id_)
-                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.id_.."](https://t.me/i600ik) \n܂𓍼 ⁝ تم تقييده في المجموعه")
+                            send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..result.id_.."](https://t.me/IQTHON) \n܂𓍼 ⁝ تم تقييده في المجموعه")
                         else
                             send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ لا يوجد حساب بهاذا المعرف")
                         end
@@ -4775,7 +4775,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     else
                         https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..
                                           msg.chat_id_ .. "&user_id=" .. userid)
-                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم تقييده في المجموعه")
+                        send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم تقييده في المجموعه")
                     end
                     return false
                 end
@@ -4852,7 +4852,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..
                                       msg.chat_id_ .. "&user_id=" .. userid ..
                                       "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/i600ik)\n܂𓍼 ⁝ تم الغاء تقييده")
+                    send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ العضو » ["..userid.."](https://t.me/IQTHON)\n܂𓍼 ⁝ تم الغاء تقييده")
                     return false
                 end
                 if text == ("طرد") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
@@ -8856,11 +8856,11 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                 end
                 if text == ("تحديث السورس") and DevLARViN(msg) then
                     send(msg.chat_id_, msg.id_, '܂𓍼 ⁝ تم التحديث')
-                    os.execute('rm -rf LARViN.lua')
+                    os.execute('rm -rf IRAQTHON.lua')
                     os.execute('rm -rf start.lua')
-                    os.execute('wget https://raw.githubusercontent.com/LARViNTeam/LARViN/master/LARViN.lua')
+                    os.execute('wget https://raw.githubusercontent.com/LARViNTeam/LARViN/master/IRAQTHON.lua')
                     os.execute('wget https://raw.githubusercontent.com/LARViNTeam/LARViN/master/start.lua')
-                    dofile('LARViN.lua')
+                    dofile('IRAQTHON.lua')
                     return false
                 end
 
@@ -9029,7 +9029,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     if res == 200 then
                         os.execute("rm -fr LARViN_Files/" .. file)
                         send(msg.chat_id_, msg.id_, t)
-                        dofile('LARViN.lua')
+                        dofile('IRAQTHON.lua')
                     else
                         send(msg.chat_id_, msg.id_,
                             "*܂𓍼 ⁝  عذرا لا يوجد هاكذا ملف في المتجر *\n")
@@ -9056,7 +9056,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                         chek:write(json_file)
                         chek:close()
                         send(msg.chat_id_, msg.id_, t)
-                        dofile('LARViN.lua')
+                        dofile('IRAQTHON.lua')
                     else
                         send(msg.chat_id_, msg.id_,
                             "*܂𓍼 ⁝  عذرا لا يوجد هاكذا ملف في المتجر *\n")
@@ -9118,7 +9118,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     end
                 end
                 if text == "تحديث" and DevLARViN(msg) then
-                    dofile("LARViN.lua")
+                    dofile("IRAQTHON.lua")
                     send(msg.chat_id_, msg.id_, "܂𓍼 ⁝ تم التحديث")
                 end
                 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
@@ -9137,15 +9137,15 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                     Text = [[
 𓍼 ⁝ Welcome to Source 
 
-𓍼 ⁝ LARViN TEAM
+𓍼 ⁝ IRAQTHON TEAM
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𓍼 ⁝ [Source Channel](https://t.me/i600ik/610) 
+𓍼 ⁝ [Source Channel](https://t.me/IQTHON/610) 
 
-𓍼 ⁝ [Source  Files](https://t.me/i500k) 
+𓍼 ⁝ [Source  Files](https://t.me/YZZZY) 
 
-𓍼 ⁝ [TWS LARViN](http://t.me/X_LLLBot) 
+𓍼 ⁝ [TWS IRAQ](http://t.me/klanr) 
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-𓍼 ⁝ [Mtwr alswrus](http://t.me/X_lll) 
+𓍼 ⁝ [Dav Source](http://t.me/klanr) 
 ]]
                     send(msg.chat_id_, msg.id_, Text)
                 end
@@ -9333,7 +9333,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ م7 ◃ لعرض أوامر المطور  
   ┘ م8 ◃ لعرض أوامر المطور ألاساسي 
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝ [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝ [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9395,7 +9395,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ التفليش
   ┘ الانلاين
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9432,7 +9432,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ ردود المدير
   ┘ الردود
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9469,7 +9469,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ صوره
   ┘ وصف
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9508,7 +9508,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ امر
   ┘ الاوامر المضافه
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9540,7 +9540,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
   ┤ تغير رد المميز + الاسم 
   ┘  تغير رد العضو + الاسم
   ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-  ܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+  ܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
 
                     send(msg.chat_id_, msg.id_, help_text or Text)
@@ -9577,7 +9577,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
 ┤ الاوامر المضافه 
 ┘ قائمه المنع
 ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -9585,7 +9585,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                 if text == 'م7' and DevBot(msg) then
                     local help_text = database:get(bot_id .. 'help7_text')
                     send(msg.chat_id_, msg.id_, help_text or
-                        "܂𓍼 ⁝ اوامر مطور البوت .\n܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀\n┐ تفعيل ܊ تعطيل\n┤ المجموعات ܊ المشتركين\n┤ رفع ܊ تنزيل ٭ منشى اساسي ٭\n┤ مسح المنشئين الاساسين\n┤ مسح المنشئين\n┤ اسم البوت + غادر\n┤ ردود المطور\n┘ اذاعه ܊ اذا كان المطور الاساسي مفعلها\n܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀\n܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.")
+                        "܂𓍼 ⁝ اوامر مطور البوت .\n܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀\n┐ تفعيل ܊ تعطيل\n┤ المجموعات ܊ المشتركين\n┤ رفع ܊ تنزيل ٭ منشى اساسي ٭\n┤ مسح المنشئين الاساسين\n┤ مسح المنشئين\n┤ اسم البوت + غادر\n┤ ردود المطور\n┘ اذاعه ܊ اذا كان المطور الاساسي مفعلها\n܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀\n܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.")
                     return false
                 end
 
@@ -9655,7 +9655,7 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
 ┤ تنظيف المشتركين 
 ┘ تنظيف الكروبات
 ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
-܂𓍼 ⁝  [قناة السورس](t.me/i600ik) 🔺.
+܂𓍼 ⁝  [قناة السورس](t.me/IQTHON) 🔺.
 ]]
                     send(msg.chat_id_, msg.id_, help_text or Text)
                     return false
@@ -10474,15 +10474,15 @@ function LARViN_Started_Bot(msg, data) -- بداية العمل
                 end
                 if text == "تحديث السورس 📥" then
                     send(msg.chat_id_, msg.id_, '☑┇تم التحديث')
-                    os.execute('rm -rf LARViN.lua')
+                    os.execute('rm -rf IRAQTHON.lua')
                     os.execute('rm -rf start.lua')
-                    os.execute('wget https://raw.githubusercontent.com/LARViNTeam/LARViN/master/LARViN.lua')
-                    os.execute('wget https://raw.githubusercontent.com/LARViNTeam/LARViN/master/start.lua')
-                    dofile('LARViN.lua')
+                    os.execute('wget https://raw.githubusercontent.com/klanrali/TeamIraqthon/master/IRAQTHON.lua')
+                    os.execute('wget https://raw.githubusercontent.com/klanrali/TeamIraqthon/master/start.lua')
+                    dofile('IRAQTHON.lua')
                     return false
                 end
                 if text == "تحديث ♻" then
-                    dofile("LARViN.lua")
+                    dofile("IRAQTHON.lua")
                     send(msg.chat_id_, msg.id_, "☑┇تم التحديث")
                 end
             end
